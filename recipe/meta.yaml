@@ -1,17 +1,17 @@
 {% set name = "sagemaker-pytorch-serving-container" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://github.com/aws/{{ name }}/archive/v{{ version }}.tar.gz"
-  sha256: 092e8f9e2cbdfbbb96f434efe84368476241dbd0333afc5b13b47796c217bcca
+  url: https://github.com/aws/{{ name }}/archive/v{{ version }}.tar.gz
+  sha256: e27a860b74b778ebef940e51ef910b2df939663bed0b204ddb3e01a6e2c3eaac
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - serve=sagemaker_pytorch_serving_container.serving:main
   noarch: python
@@ -35,11 +35,11 @@ test:
     - sagemaker_pytorch_serving_container
 
 about:
-  home: "https://github.com/aws/sagemaker-pytorch-serving-container/"
+  home: https://github.com/aws/sagemaker-pytorch-serving-container/
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: "Open source library for creating PyTorch containers to run on Amazon SageMaker."
+  summary: Open source library for creating PyTorch containers to run on Amazon SageMaker.
   doc_url: https://sagemaker.readthedocs.io/en/stable/using_pytorch.html
   dev_url: https://github.com/aws/sagemaker-pytorch-serving-container/
 
