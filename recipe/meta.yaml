@@ -10,7 +10,7 @@ source:
   sha256: 74fa5381f07eb520ace63bc5bd9a9f9f2dbfeb5aaff53830fdeba0ebff40f7da
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - serve=sagemaker_pytorch_serving_container.serving:main
@@ -45,6 +45,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - mxr-conda
     - rluria14
     - benhuff
     - oblute
