@@ -40,6 +40,7 @@ Installing `sagemaker-pytorch-serving-container` from the `conda-forge` channel 
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `sagemaker-pytorch-serving-container` can be installed with:
@@ -119,6 +120,7 @@ Feedstock Maintainers
 =====================
 
 * [@benhuff](https://github.com/benhuff/)
+* [@mxr-conda](https://github.com/mxr-conda/)
 * [@oblute](https://github.com/oblute/)
 * [@rluria14](https://github.com/rluria14/)
 
