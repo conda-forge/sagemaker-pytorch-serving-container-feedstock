@@ -1,11 +1,11 @@
-About sagemaker-pytorch-serving-container
-=========================================
+About sagemaker-pytorch-serving-container-feedstock
+===================================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sagemaker-pytorch-serving-container-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/aws/sagemaker-pytorch-serving-container/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sagemaker-pytorch-serving-container-feedstock/blob/main/LICENSE.txt)
 
 Summary: Open source library for creating PyTorch containers to run on Amazon SageMaker.
 
