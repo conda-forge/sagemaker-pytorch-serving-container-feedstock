@@ -10,7 +10,7 @@ source:
   sha256: 0a6eb94e3b2989461ee2e5e55ece411a14979d25651594c48fb708d66dc527fb
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - serve=sagemaker_pytorch_serving_container.serving:main
@@ -27,7 +27,7 @@ requirements:
     - retrying >=1.3.3
     - sagemaker_containers
     - six >=1.12.0
-    - pytorch-cpu
+    - pytorch
     - requests-mock >=1.6.0
     - sagemaker-inference-toolkit
 test:
